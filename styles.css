@@ -39,6 +39,28 @@ nav ul li {
     display: inline-block; /* 메뉴 항목을 가로로 나열 */
 }
 
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 12px 24px; /* 버튼 안 여백 */
+    font-size: 18px;
+    font-family: 'CookieRun-Regular', sans-serif; /* 요청한 폰트 적용 */
+    color: white;
+    background-color: #00b075; /* 버튼 배경색 */
+    border: none;
+    border-radius: 10px; /* 둥근 모서리 */
+    text-align: center;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    cursor: pointer;
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.button:hover {
+    background-color: #45a049; /* 호버 시 배경색 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 확대 */
+}
+
 section {
     text-align: center; /* 각 섹션의 텍스트 중앙 정렬 */
     padding: 20px;
