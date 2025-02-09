@@ -25,7 +25,7 @@ header img {
 nav {
     display: flex;
     justify-content: center; /* 메뉴를 가로로 중앙 정렬 */
-    gap: 20px; /* 항목 간 간격 */
+    gap: 40px; /* 메뉴 항목 간 간격을 늘림 */
     margin-top: 20px; /* 로고와 메뉴 간 간격 */
 }
 
