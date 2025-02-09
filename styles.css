@@ -7,4 +7,13 @@
 
 body {
     font-family: 'CookieRun-Regular', sans-serif;
+    text-align: center; /* 모든 텍스트를 중앙 정렬 */
+}
+
+header {
+    text-align: center; /* 헤더 텍스트 중앙 정렬 */
+}
+
+section {
+    text-align: center; /* 각 섹션의 텍스트 중앙 정렬 */
 }
