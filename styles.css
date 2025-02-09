@@ -24,6 +24,6 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block; /* 버튼처럼 가로로 나열 */
-    margin-right: 20px; /* 버튼 간 간격 */
+    display: block; /* 항목을 세로로 나열 */
+    margin-bottom: 10px; /* 항목 간 간격 */
 }
