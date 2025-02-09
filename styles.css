@@ -72,41 +72,11 @@ section {
     color: transparent; /* 텍스트 색상을 투명하게 설정 */
 }
 
+/* "문의" 텍스트에 그라디언트 배경 설정 */
 #contact h2 {
     background: linear-gradient(to bottom, rgba(200, 255, 0, 1), rgba(255, 149, 0, 1)); /* 그라디언트 배경 */
     -webkit-background-clip: text; /* 텍스트에 배경 적용 */
     color: transparent; /* 텍스트 색상을 투명하게 설정 */
-}
-
-/* 배너 이미지 애니메이션 */
-.banner {
-    width: 100%;
-    overflow: hidden;
-    margin-top: 20px;
-}
-
-.banner-images {
-    display: flex;
-    animation: slide 10s infinite; /* 5초마다 이미지 교체 */
-}
-
-.banner-images img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* 이미지를 잘라서 꽉 채우도록 설정 */
-}
-
-/* 이미지 슬라이드 애니메이션 */
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
 }
 
 /* 모바일에서 글자 크기 조정 */
