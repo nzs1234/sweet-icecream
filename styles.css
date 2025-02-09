@@ -8,18 +8,24 @@
 body {
     font-family: 'CookieRun-Regular', sans-serif;
     text-align: center; /* 모든 텍스트를 중앙 정렬 */
+    margin: 0;
+    padding: 0;
 }
 
 header {
     text-align: center; /* 헤더 텍스트 중앙 정렬 */
+    padding: 20px 10px;
 }
 
-header h1 {
-    font-size: 3em; /* "달달한 아이스크림" 글자 크기 크게 설정 */
+header img {
+    width: 100%; /* 이미지가 화면에 맞게 조정 */
+    max-width: 500px; /* 이미지 크기 최대 500px */
+    height: auto; /* 이미지 비율을 유지 */
 }
 
 section {
     text-align: center; /* 각 섹션의 텍스트 중앙 정렬 */
+    padding: 20px;
 }
 
 nav ul {
@@ -36,4 +42,23 @@ nav ul li {
     background: linear-gradient(to bottom, rgba(0, 238, 255, 1), rgba(0, 255, 98, 1)); /* 그라디언트 배경 */
     -webkit-background-clip: text; /* 텍스트에 배경 적용 */
     color: transparent; /* 텍스트 색상을 투명하게 설정 */
+}
+
+/* 모바일에서 글자 크기 조정 */
+@media (max-width: 600px) {
+    header img {
+        width: 80%; /* 모바일에서는 이미지 크기 80% */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* 제목 크기 축소 */
+    }
+
+    nav ul li {
+        font-size: 1.2em; /* 메뉴 글자 크기 조정 */
+    }
+
+    section {
+        padding: 15px; /* 섹션 여백 조정 */
+    }
 }
