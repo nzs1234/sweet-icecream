@@ -31,3 +31,9 @@ nav ul li {
     display: block; /* 항목을 세로로 나열 */
     margin-bottom: 10px; /* 항목 간 간격 */
 }
+
+#about h2 {
+    background: linear-gradient(to bottom, rgba(0, 238, 255, 1), rgba(0, 255, 98, 1)); /* 그라디언트 배경 */
+    -webkit-background-clip: text; /* 텍스트에 배경 적용 */
+    color: transparent; /* 텍스트 색상을 투명하게 설정 */
+}
