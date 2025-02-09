@@ -14,6 +14,10 @@ header {
     text-align: center; /* 헤더 텍스트 중앙 정렬 */
 }
 
+header h1 {
+    font-size: 3em; /* "달달한 아이스크림" 글자 크기 크게 설정 */
+}
+
 section {
     text-align: center; /* 각 섹션의 텍스트 중앙 정렬 */
 }
