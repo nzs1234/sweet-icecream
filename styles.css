@@ -7,7 +7,7 @@
 
 body {
     font-family: 'CookieRun-Regular', sans-serif;
-    text-align: center; /* 모든 글자 중앙 정렬 */
+    text-align: center; /* 전체 텍스트 중앙 정렬 */
 }
 
 /* 버튼 스타일 */
@@ -15,7 +15,7 @@ body {
     display: inline-block;
     padding: 12px 24px; /* 버튼 안 여백 */
     font-size: 18px;
-    font-family: 'CookieRun-Regular', sans-serif; /* 요청한 폰트 적용 */
+    font-family: 'CookieRun-Regular', sans-serif;
     color: white;
     background-color: #00b075; /* 버튼 배경색 */
     border: none;
@@ -32,7 +32,7 @@ body {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 확대 */
 }
 
-/* 배너 이미지 크기 원래대로 설정 */
+/* 배너 스타일 */
 .banner {
     width: 100%;
     margin-top: 20px;
@@ -41,12 +41,14 @@ body {
 .banner-images {
     display: flex;
     animation: slide 10s infinite; /* 5초마다 이미지 교체 */
+    justify-content: center; /* 중앙 정렬 */
 }
 
 .banner-images img {
     width: 100%; /* 배너 이미지가 화면 크기에 맞게 100%로 조정 */
+    max-width: 100%; /* 이미지 크기를 제한 */
     height: auto; /* 높이는 비율에 맞게 자동으로 조정 */
-    object-fit: cover; /* 이미지를 꽉 채우되 비율 유지 */
+    object-fit: contain; /* 이미지가 화면 크기에 맞춰 크기 조정 */
 }
 
 /* 이미지 슬라이드 애니메이션 */
@@ -67,14 +69,18 @@ header {
     text-align: center; /* 중앙 정렬 */
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+/* 회사 소개, 문의 섹션 텍스트 중앙 정렬 */
+#about, #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* 텍스트 중앙 정렬 */
+    margin: 20px 0;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+#about h2, #contact h2 {
+    margin-bottom: 10px;
 }
 
 /* 배경 그라디언트 텍스트 스타일 */
