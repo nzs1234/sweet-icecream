@@ -91,9 +91,9 @@ section {
 }
 
 .banner-images img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* 이미지를 잘라서 꽉 채우도록 설정 */
+    width: 100%; /* 화면 크기에 맞춰 배너 이미지 크기 조정 */
+    height: 100%; /* 화면 높이에 맞춰 배너 이미지 크기 조정 */
+    object-fit: cover; /* 이미지 비율 유지하면서 꽉 채우기 */
 }
 
 /* 이미지 슬라이드 애니메이션 */
