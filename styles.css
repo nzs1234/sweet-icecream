@@ -18,7 +18,7 @@ header {
 }
 
 header img {
-    width: 400px; /* 로고 크기 400px로 설정 */
+    width: 550px; /* 로고 크기 550px로 설정 */
     height: auto; /* 이미지 비율 유지 */
 }
 
@@ -68,6 +68,13 @@ section {
 
 #about h2 {
     background: linear-gradient(to bottom, rgba(0, 238, 255, 1), rgba(0, 255, 98, 1)); /* 그라디언트 배경 */
+    -webkit-background-clip: text; /* 텍스트에 배경 적용 */
+    color: transparent; /* 텍스트 색상을 투명하게 설정 */
+}
+
+/* "문의" 텍스트에 그라디언트 배경 설정 */
+#contact h2 {
+    background: linear-gradient(to bottom, rgba(200, 255, 0, 1), rgba(255, 149, 0, 1)); /* 그라디언트 배경 */
     -webkit-background-clip: text; /* 텍스트에 배경 적용 */
     color: transparent; /* 텍스트 색상을 투명하게 설정 */
 }
