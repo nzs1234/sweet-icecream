@@ -40,7 +40,7 @@ body {
 
 .banner-images {
     display: flex;
-    animation: slide 10s infinite; /* 5초마다 이미지 교체 */
+    animation: slide 6s ease-in-out infinite; /* 1초 슬라이드, 5초 멈춤 */
 }
 
 .banner-images img {
@@ -54,7 +54,10 @@ body {
     0% {
         transform: translateX(0);
     }
-    50% {
+    16.67% { /* 1초 동안 슬라이드 */
+        transform: translateX(-100%);
+    }
+    83.33% { /* 5초 동안 멈춤 */
         transform: translateX(-100%);
     }
     100% {
