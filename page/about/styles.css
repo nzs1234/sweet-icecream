@@ -51,6 +51,17 @@ body {
     object-fit: cover; /* 이미지를 꽉 채우되 비율 유지 */
 }
 
+.ab-big {
+    font-size: 30px;
+    font-style: bold;
+    text-align: left;
+    text-shadow: 2px 2px black;
+}
+
+.ab-p {
+    text-aligen: left;
+}
+
 /* 이미지 슬라이드 애니메이션 */
 @keyframes slide {
     0% {
