@@ -63,7 +63,7 @@ body {
 }
 
 .ab-img {
-    text-align: right;
+    float: right;
 }
 
 /* 이미지 슬라이드 애니메이션 */
