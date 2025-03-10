@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'CookieRun-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/CookieRun-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'CookieRun-Regular', sans-serif;
+    text-align: center; /* 모든 글자 중앙 정렬 */
+}
+
+/* 버튼 스타일 */
+.button {
+    display: inline-block;
+    padding: 12px 24px; /* 버튼 안 여백 */
+    font-size: 18px;
+    font-family: 'CookieRun-Regular', sans-serif; /* 요청한 폰트 적용 */
+    color: white;
+    background-color: #00b075; /* 버튼 배경색 */
+    border: none;
+    border-radius: 10px; /* 둥근 모서리 */
+    text-align: center;
+    text-decoration: none; /* 링크 밑줄 제거 */
+    cursor: pointer;
+    transition: all 0.3s ease; /* 부드러운 전환 효과 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+}
+
+.button:hover {
+    background-color: #45a049; /* 호버 시 배경색 */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* 호버 시 그림자 확대 */
+}
+
+/* 배너 이미지 크기 원래대로 설정 */
+.banner {
+    width: 100%;
+    margin-top: 20px;
+    overflow: hidden; /* 배너 이미지가 잘리지 않도록 설정 */
+}
+
+.banner-images {
+    display: flex;
+    width: 300%; /* 세 이미지를 나란히 배치 */
+    animation: slide 18s infinite; /* 5초 * 3 = 15초 동안 배너 표시, 1초 애니메이션, 총 18초 */
+}
+
+.banner-images img {
+    width: calc(100%/3); /* 각 배너 이미지가 화면의 1/3을 차지하도록 설정 */
+    height: auto; /* 높이는 비율에 맞게 자동으로 조정 */
+    object-fit: cover; /* 이미지를 꽉 채우되 비율 유지 */
+}
+
+/* 이미지 슬라이드 애니메이션 */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    29.17% { /* 배너 1 표시 5초 */
+        transform: translateX(0);
+    }
+    33.33% { /* 애니메이션 슬라이드 1초 */
+        transform: translateX(calc(-100%/3));
+    }
+    58.33% { /* 배너 2 표시 5초 */
+        transform: translateX(calc(-100%/3));
+    }
+    62.5% { /* 애니메이션 슬라이드 1초 */
+        transform: translateX(calc(-200%/3));
+    }
+    91.67% { /* 배너 3 표시 5초 */
+        transform: translateX(calc(-200%/3));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* header 스타일 */
+header {
+    text-align: center; /* 중앙 정렬 */
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+/* 배경 그라디언트 텍스트 스타일 */
+#about h2 {
+    background: linear-gradient(to bottom, rgba(0, 238, 255, 1), rgba(0, 255, 98, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* 문의 글자 그라디언트 스타일 */
+#contact h2 {
+    background: linear-gradient(to bottom, rgba(200, 255, 0, 1), rgba(255, 149, 0, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+}
