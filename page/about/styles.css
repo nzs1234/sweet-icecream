@@ -52,10 +52,10 @@ body {
 }
 
 .ab-big {
-    font-size: 30px;
+    font-size: 45px;
     font-style: bold;
     text-align: left;
-    text-shadow: 2px 2px black;
+    text-shadow: 3px 4px gray;
 }
 
 .ab-p {
