@@ -69,14 +69,14 @@ body {
     font-size: 45px;
     font-style: bold;
     text-align: left;
-    font-family: 'TheJamsil5Bold'
+    font-family: 'TheJamsil5Bold';
     text-shadow: 3px 4px gray;
 }
 
 .ab-p {
     font-size: 20px;
     text-align: left;
-    font-family: 'Pretendard-Regular'
+    font-family: 'Pretendard-Regular';
 }
 
 .ab-img {
