@@ -83,6 +83,24 @@ body {
     float: right;
 }
 
+.ab-big-r {
+    font-size: 45px;
+    font-style: bold;
+    text-align: right;
+    font-family: 'TheJamsil5Bold';
+    text-shadow: 3px 4px gray;
+}
+
+.ab-p-r {
+    font-size: 20px;
+    text-align: right;
+    font-family: 'Pretendard-Regular';
+}
+
+.ab-img-r {
+    float: left;
+}
+
 /* 이미지 슬라이드 애니메이션 */
 @keyframes slide {
     0% {
